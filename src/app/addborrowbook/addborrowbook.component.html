@@ -1,0 +1,31 @@
+<h1>Submit BorrowBook Details</h1>
+<hr />
+<div class="container">
+    <form (ngSubmit)="getBorrowDetails()">
+        <tr>
+            <td><label>Borrow id</label></td>
+            <td><input type="text" [(ngModel)]="borrowbook.borrowid" name="borrowid" /></td>
+        </tr>
+        <tr>
+            <td><label>User id</label></td>
+            <td><input type="text" [(ngModel)]="borrowbook.userid" name="userid" /></td>
+        </tr>
+        <tr>
+            <td><label>Username</label></td>
+            <td><input type="text" [(ngModel)]="borrowbook.username" name="username" /></td>
+        </tr>
+        <tr>
+            <td><label>Book id</label></td>
+            <td><input type="text" [(ngModel)]="borrowbook.bookid" name="bookid" /></td>
+        </tr>
+        <tr>
+            <td><label>Issuedate</label></td>
+            <td><input type="text" [(ngModel)]="borrowbook.issuedate" name="issuedate" /></td>
+        </tr>
+        <tr>
+            <td><label>Duedate</label></td>
+            <td><input type="text" [(ngModel)]="borrowbook.duedate" name="duedate" /></td>
+        </tr>
+        <button type="submit">Submit</button>
+    </form>
+</div>

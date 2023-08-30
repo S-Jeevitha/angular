@@ -1,0 +1,26 @@
+<button onclick="window.location.href='http://localhost:4200/viewBooks';" class="btn btn-primary">Back</button>
+<div class="container">
+    <table class="table table-striped">
+        <tr>
+            <th>BORROW ID</th>
+            <th>USER ID</th>
+            <th>USERNAME</th>
+            <th>BOOK ID</th>
+            <th>ISSUE DATE</th>
+            <th>DUE DATE</th>
+            <th>DELETE</th>
+        </tr>
+        <tr *ngFor="let bo of borrowbook">
+            <td>{{bo.borrowid}}</td>
+            <td>{{bo.userid}}</td>
+            <td>{{bo.username}}</td>
+            <td>{{bo.bookid}}</td>
+            <td>{{bo.issuedate}}</td>
+            <td>{{bo.duedate}}</td>
+            <td>
+                <a href="deleteBorrowBook/{{bo.borrowid}}" class="btn btn-danger">Delete</a>
+            </td>
+
+        </tr>
+    </table>
+</div>

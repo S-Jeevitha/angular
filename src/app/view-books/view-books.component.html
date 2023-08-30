@@ -1,0 +1,42 @@
+<button onclick="window.location.href='http://localhost:4200/viewBooks';"
+    class="btn btn-dark">Refresh</button>&nbsp;&nbsp;&nbsp;
+
+<a href="addBook" class="btn btn-primary">Add Book</a>&nbsp;&nbsp;&nbsp;
+
+<a href="viewBorrowBook" class="btn btn-success">View Borrowbook</a>&nbsp;&nbsp;&nbsp;
+
+<a href="viewUser" class="btn btn-secondary">View User</a>&nbsp;&nbsp;&nbsp;
+
+<button onclick="window.location.href='http://localhost:4200/home';" class="btn btn-danger">Logout</button>
+
+<div class="container">
+    <table class="table table-striped">
+        <tr>
+            <th>BOOK ID</th>
+            <th>BOOK NAME</th>
+            <th>AUTHOR</th>
+            <th>PUBLISHER</th>
+            <th>PUBLISHED YEAR</th>
+            <th>LANGUAGE</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+        </tr>
+        <tr *ngFor="let b of book">
+            <td>{{b.bookid}}</td>
+            <td>{{b.bookname}}</td>
+            <td>{{b.author}}</td>
+            <td>{{b.publisher}}</td>
+            <td>{{b.publishedyear}}</td>
+            <td>{{b.language}}</td>
+            <td>
+                <a href="updateBook/{{b.bookid}}/{{b.bookname}}/{{b.author}}/{{b.publisher}}/{{b.publishedyear}}/{{b.language}}"
+                    class="btn btn-primary">Update</a>
+            </td>
+            <td>
+                <a href="deleteBook/{{b.bookid}}" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+
+    </table>
+
+</div>

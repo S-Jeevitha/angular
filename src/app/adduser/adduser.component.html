@@ -1,0 +1,30 @@
+<div class="img-container">
+    <img src="assets/register.png" alt="Avatar" class="avatar" width="300" height="300">
+</div>
+<!-- <h1>Submit User Details</h1>
+<hr /> -->
+<div class="container">
+    <form (ngSubmit)="getUserDetails()">
+        <tr>
+            <td><label>User id</label></td>
+            <td><input type="text" [(ngModel)]="user.userid" name="userid"></td>
+        </tr>
+        <tr>
+            <td><label>Username</label></td>
+            <td><input type="text" [(ngModel)]="user.username" name="username"></td>
+        </tr>
+        <tr>
+            <td><label>Mailid</label></td>
+            <td><input type="text" [(ngModel)]="user.mailid" name="mailid"></td>
+        </tr>
+        <tr>
+            <td><label>Mobilenumber</label></td>
+            <td><input type="text" [(ngModel)]="user.mobilenumber" name="mailid"></td>
+        </tr>
+        <tr>
+            <td><label>Password</label></td>
+            <td><input type="text" [(ngModel)]="user.password" name="passsword"><br /></td>
+        </tr>
+        <button type="submit">Submit</button>
+    </form>
+</div>

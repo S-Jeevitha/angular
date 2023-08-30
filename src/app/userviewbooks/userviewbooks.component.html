@@ -1,0 +1,29 @@
+<a href="addBorrowBook" class="btn btn-success">addBorrowBook</a>&nbsp;&nbsp;&nbsp;
+
+<!-- <a href="BorrowBook" class="btn btn-primary">BorrowBookDetails</a> -->
+<hr />
+
+<div class="container">
+    <table class="table table-striped">
+        <tr>
+            <th>BOOK ID</th>
+            <th>BOOK NAME</th>
+            <th>AUTHOR</th>
+            <th>PUBLISHER</th>
+            <th>PUBLISHED YEAR</th>
+            <th>LANGUAGE</th>
+
+        </tr>
+        <tr *ngFor="let b of book">
+            <td>{{b.bookid}}</td>
+            <td>{{b.bookname}}</td>
+            <td>{{b.author}}</td>
+            <td>{{b.publisher}}</td>
+            <td>{{b.publishedyear}}</td>
+            <td>{{b.language}}</td>
+
+        </tr>
+
+    </table>
+
+</div>

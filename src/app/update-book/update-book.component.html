@@ -1,0 +1,32 @@
+<h1>Update Book Details</h1>
+<hr />
+<div class="container">
+    <form (ngSubmit)="getUpdateDetails()">
+        <tr>
+            <td><label>Book Id</label></td>
+            <td><input type="text" [(ngModel)]="book.bookid" name="bookid" /></td>
+        </tr>
+        <tr>
+            <td><label>Book Name</label></td>
+            <td><input type="text" [(ngModel)]="book.bookname" name="bookname" /></td>
+        </tr>
+        <tr>
+            <td><label>Author</label></td>
+            <td><input type="text" [(ngModel)]="book.author" name="author" /></td>
+        </tr>
+        <tr>
+            <td><label>Publisher</label></td>
+            <td><input type="text" [(ngModel)]="book.publisher" name="publisher" /></td>
+        </tr>
+        <tr>
+            <td><label>Published Year</label></td>
+            <td><input type="text" [(ngModel)]="book.publishedyear" name="publishedyear" /></td>
+        </tr>
+        <tr>
+            <td><label>Language</label></td>
+            <td><input type="text" [(ngModel)]="book.language" name="language" /></td>
+        </tr>
+        <button type="submit">Submit</button>
+
+    </form>
+</div>
